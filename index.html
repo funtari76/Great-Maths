@@ -8,7 +8,7 @@
     <!--font awesome and google fonts-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/CSS/style.css">
-    <title>Document</title>
+    <title>DTest</title>
 </head>
 <body>
     <h1 class="heading">
@@ -17,16 +17,16 @@
 
     <div class="game-area"></div>
     <div class="controls-area">
-        <button class="btn btn--btn btn--green">
+        <button data-type="addition" class="btn btn--btn btn--green">
             <i class="faas fa-plus"></i>
         </button>
-        <button class="btn btn--btn btn--blue">
+        <button data-type="subtract" class="btn btn--btn btn--blue">
             <i class="faas fa-minus"></i>
         </button>
-        <button class="btn btn--btn btn--orange">
+        <button data-type="multiply" class="btn btn--btn btn--orange">
             <i class="faas fa-times"></i>
         </button>
-        <button class="btn btn--btn btn--red">
+        <button data-type="division" class="btn btn--btn btn--red">
             <i class="faas fa-divide"></i>
         </button>
     </div>
@@ -38,11 +38,12 @@
         <p class="answer-message">Enter Answer:</p>
         <input id="answer-box" type="number">
     </div>
-    <button class="btn btn--gray">Submit Answer</button>
+    <button data-type="Submit" class="btn btn--gray">Submit Answer</button>
     <div class="score-area">
         <p class="score">Correct Answers <span id="score">0</span></p>
         <p class="score">Incorrect Answers <span id="Incorrect">0</span></p>
     </div>
+    
     <script src="assets/JS/script.js"></script>
 </body>
 </html>
